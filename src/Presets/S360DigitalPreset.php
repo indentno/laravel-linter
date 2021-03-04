@@ -11,8 +11,10 @@ class S360DigitalPreset implements PresetInterface
     {
         return [
             Linters\AlphabeticalImports::class,
-            Linters\ApplyMiddlewareInRoutes::class,
-            Linters\ArrayParametersOverViewWith::class,
+            // TODO: Needs to be remade with our own "LintsControllers" trait
+//            Linters\ApplyMiddlewareInRoutes::class,
+            // TODO: Needs to be remade with our own "LintsControllers" trait
+//            Linters\ArrayParametersOverViewWith::class,
             Linters\ConcatenationSpacing::class,
             Linters\ImportFacades::class,
             Linters\NoDatesPropertyOnModels::class,
@@ -21,17 +23,15 @@ class S360DigitalPreset implements PresetInterface
             Linters\NoLeadingSlashesOnRoutePaths::class,
             Linters\NoParensEmptyInstantiations::class,
             Linters\NoSpaceAfterBladeDirectives::class,
-            // Test this one:
             Linters\NoStringInterpolationWithoutBraces::class,
             Linters\NoUnusedImports::class,
-            Linters\OneLineBetweenClassVisibilityChanges::class,
-            // Test this one:
             Linters\QualifiedNamesOnlyForClassName::class,
             Linters\RemoveLeadingSlashNamespaces::class,
-            // Test this one:
-            Linters\RequestHelperFunctionWherePossible::class,
+            // TODO: Needs to be remade with our own "LintsControllers" trait
+//            Linters\RequestHelperFunctionWherePossible::class,
             // Test this one (Verify that it works when controllers are not pure rest):
-            Linters\RestControllersMethodOrder::class,
+            // TODO: Needs to be remade with our own "LintsControllers" trait
+//            Linters\RestControllersMethodOrder::class,
             Linters\SpaceAfterBladeDirectives::class,
             Linters\SpacesAroundBladeRenderContent::class,
             Linters\TrailingCommasOnArrays::class,
