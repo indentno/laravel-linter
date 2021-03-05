@@ -2,41 +2,57 @@
 
 namespace S360Digital\LaravelLinter\Presets;
 
+use S360Digital\LaravelLinter\Linters\ApplyMiddlewareInRoutes;
+use S360Digital\LaravelLinter\Linters\ArrayParametersOverViewWith;
+use S360Digital\LaravelLinter\Linters\ControllerHasCorrectOrderForRestMethods;
+use S360Digital\LaravelLinter\Linters\NoCompact;
+use Tighten\Linters\AlphabeticalImports;
+use Tighten\Linters\ConcatenationSpacing;
+use Tighten\Linters\ImportFacades;
+use Tighten\Linters\NoDatesPropertyOnModels;
+use Tighten\Linters\NoDump;
+use Tighten\Linters\NoJsonDirective;
+use Tighten\Linters\NoLeadingSlashesOnRoutePaths;
+use Tighten\Linters\NoParensEmptyInstantiations;
+use Tighten\Linters\NoSpaceAfterBladeDirectives;
+use Tighten\Linters\NoStringInterpolationWithoutBraces;
+use Tighten\Linters\NoUnusedImports;
+use Tighten\Linters\QualifiedNamesOnlyForClassName;
+use Tighten\Linters\RemoveLeadingSlashNamespaces;
+use Tighten\Linters\SpaceAfterBladeDirectives;
+use Tighten\Linters\SpacesAroundBladeRenderContent;
+use Tighten\Linters\TrailingCommasOnArrays;
+use Tighten\Linters\UseAuthHelperOverFacade;
+use Tighten\Linters\UseConfigOverEnv;
 use Tighten\Presets\PresetInterface;
-use Tighten\Linters;
 
 class S360DigitalPreset implements PresetInterface
 {
     public function getLinters(): array
     {
         return [
-            Linters\AlphabeticalImports::class,
-            // TODO: Needs to be remade with our own "LintsControllers" trait
-//            Linters\ApplyMiddlewareInRoutes::class,
-            // TODO: Needs to be remade with our own "LintsControllers" trait
-//            Linters\ArrayParametersOverViewWith::class,
-            Linters\ConcatenationSpacing::class,
-            Linters\ImportFacades::class,
-            Linters\NoDatesPropertyOnModels::class,
-            Linters\NoDump::class,
-            Linters\NoJsonDirective::class,
-            Linters\NoLeadingSlashesOnRoutePaths::class,
-            Linters\NoParensEmptyInstantiations::class,
-            Linters\NoSpaceAfterBladeDirectives::class,
-            Linters\NoStringInterpolationWithoutBraces::class,
-            Linters\NoUnusedImports::class,
-            Linters\QualifiedNamesOnlyForClassName::class,
-            Linters\RemoveLeadingSlashNamespaces::class,
-            // TODO: Needs to be remade with our own "LintsControllers" trait
-//            Linters\RequestHelperFunctionWherePossible::class,
-            // Test this one (Verify that it works when controllers are not pure rest):
-            // TODO: Needs to be remade with our own "LintsControllers" trait
-//            Linters\RestControllersMethodOrder::class,
-            Linters\SpaceAfterBladeDirectives::class,
-            Linters\SpacesAroundBladeRenderContent::class,
-            Linters\TrailingCommasOnArrays::class,
-            Linters\UseAuthHelperOverFacade::class,
-            Linters\UseConfigOverEnv::class,
+            AlphabeticalImports::class,
+            ApplyMiddlewareInRoutes::class,
+            ArrayParametersOverViewWith::class,
+            ConcatenationSpacing::class,
+            ImportFacades::class,
+            NoCompact::class,
+            NoDatesPropertyOnModels::class,
+            NoDump::class,
+            NoJsonDirective::class,
+            NoLeadingSlashesOnRoutePaths::class,
+            NoParensEmptyInstantiations::class,
+            NoSpaceAfterBladeDirectives::class,
+            NoStringInterpolationWithoutBraces::class,
+            NoUnusedImports::class,
+            QualifiedNamesOnlyForClassName::class,
+            RemoveLeadingSlashNamespaces::class,
+            ControllerHasCorrectOrderForRestMethods::class,
+            SpaceAfterBladeDirectives::class,
+            SpacesAroundBladeRenderContent::class,
+            TrailingCommasOnArrays::class,
+            UseAuthHelperOverFacade::class,
+            UseConfigOverEnv::class,
         ];
     }
 
