@@ -2,6 +2,7 @@
 
 namespace S360Digital\LaravelLinter\Presets;
 
+use S360Digital\LaravelLinter\Linters\NoCompact;
 use Tighten\Linters\AlphabeticalImports;
 use Tighten\Linters\ConcatenationSpacing;
 use Tighten\Linters\ImportFacades;
@@ -34,6 +35,7 @@ class S360DigitalPreset implements PresetInterface
 //            ArrayParametersOverViewWith::class,
             ConcatenationSpacing::class,
             ImportFacades::class,
+            NoCompact::class,
             NoDatesPropertyOnModels::class,
             NoDump::class,
             NoJsonDirective::class,
