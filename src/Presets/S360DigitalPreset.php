@@ -2,6 +2,7 @@
 
 namespace S360Digital\LaravelLinter\Presets;
 
+use S360Digital\LaravelLinter\Linters\ApplyMiddlewareInRoutes;
 use S360Digital\LaravelLinter\Linters\NoCompact;
 use Tighten\Linters\AlphabeticalImports;
 use Tighten\Linters\ConcatenationSpacing;
@@ -29,8 +30,7 @@ class S360DigitalPreset implements PresetInterface
     {
         return [
             AlphabeticalImports::class,
-            // TODO: Needs to be remade with our own "LintsControllers" trait
-//            ApplyMiddlewareInRoutes::class,
+            ApplyMiddlewareInRoutes::class,
             // TODO: Needs to be remade with our own "LintsControllers" trait
 //            ArrayParametersOverViewWith::class,
             ConcatenationSpacing::class,
