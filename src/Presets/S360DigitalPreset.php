@@ -5,6 +5,7 @@ namespace S360Digital\LaravelLinter\Presets;
 use S360Digital\LaravelLinter\Linters\ApplyMiddlewareInRoutes;
 use S360Digital\LaravelLinter\Linters\ArrayParametersOverViewWith;
 use S360Digital\LaravelLinter\Linters\ControllerHasCorrectOrderForRestMethods;
+use S360Digital\LaravelLinter\Linters\FormRequestForControllerValidation;
 use S360Digital\LaravelLinter\Linters\NoCompact;
 use Tighten\Linters\AlphabeticalImports;
 use Tighten\Linters\ConcatenationSpacing;
@@ -35,6 +36,7 @@ class S360DigitalPreset implements PresetInterface
             ApplyMiddlewareInRoutes::class,
             ArrayParametersOverViewWith::class,
             ConcatenationSpacing::class,
+            FormRequestForControllerValidation::class,
             ImportFacades::class,
             NoCompact::class,
             NoDatesPropertyOnModels::class,
