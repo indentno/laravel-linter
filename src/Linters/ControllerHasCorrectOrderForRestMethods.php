@@ -35,15 +35,16 @@ class ControllerHasCorrectOrderForRestMethods extends BaseLinter
                 $methodNames = array_map(function ($stmt) {
                     return $stmt->name->name;
                 }, array_filter($node->stmts, function ($stmt) {
-                    return $stmt instanceof Node\Stmt\ClassMethod;
+                    return $stmt instanceof Node\Stmt\ClassMethod && $stmt->name->name !== '__construct';
                 }));
+                $methodNames = array_values($methodNames);
 
                 $restfulMethods = array_intersect(self::RESTFUL_METHOD_NAMES, $methodNames);
 
                 if (count($restfulMethods) > 0) {
                     $currentMethodOrder = array_intersect($methodNames, self::RESTFUL_METHOD_NAMES);
 
-                    return array_values($restfulMethods) !== array_values($currentMethodOrder);
+                    return array_values($restfulMethods) !== $currentMethodOrder;
                 }
             }
 
