@@ -5,7 +5,10 @@ namespace S360Digital\LaravelLinter\Presets;
 use S360Digital\LaravelLinter\Linters\ApplyMiddlewareInRoutes;
 use S360Digital\LaravelLinter\Linters\ArrayParametersOverViewWith;
 use S360Digital\LaravelLinter\Linters\ControllerHasCorrectOrderForRestMethods;
+use S360Digital\LaravelLinter\Linters\FormRequestForControllerValidation;
 use S360Digital\LaravelLinter\Linters\NoCompact;
+use S360Digital\LaravelLinter\Linters\PreventUseOfPhpDirectiveInBladeViews;
+use S360Digital\LaravelLinter\Linters\ValidRouteStructure;
 use Tighten\Linters\AlphabeticalImports;
 use Tighten\Linters\ConcatenationSpacing;
 use Tighten\Linters\ImportFacades;
@@ -35,6 +38,7 @@ class S360DigitalPreset implements PresetInterface
             ApplyMiddlewareInRoutes::class,
             ArrayParametersOverViewWith::class,
             ConcatenationSpacing::class,
+            FormRequestForControllerValidation::class,
             ImportFacades::class,
             NoCompact::class,
             NoDatesPropertyOnModels::class,
@@ -45,6 +49,7 @@ class S360DigitalPreset implements PresetInterface
             NoSpaceAfterBladeDirectives::class,
             NoStringInterpolationWithoutBraces::class,
             NoUnusedImports::class,
+            PreventUseOfPhpDirectiveInBladeViews::class,
             QualifiedNamesOnlyForClassName::class,
             RemoveLeadingSlashNamespaces::class,
             ControllerHasCorrectOrderForRestMethods::class,
@@ -53,6 +58,7 @@ class S360DigitalPreset implements PresetInterface
             TrailingCommasOnArrays::class,
             UseAuthHelperOverFacade::class,
             UseConfigOverEnv::class,
+            ValidRouteStructure::class,
         ];
     }
 

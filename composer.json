@@ -11,5 +11,16 @@
         "psr-4": {
             "S360Digital\\LaravelLinter\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "symfony/var-dumper": "^5.2",
+        "sempro/phpunit-pretty-print": "^1.4"
     }
 }
