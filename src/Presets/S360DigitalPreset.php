@@ -7,6 +7,7 @@ use S360Digital\LaravelLinter\Linters\ArrayParametersOverViewWith;
 use S360Digital\LaravelLinter\Linters\ControllerHasCorrectOrderForRestMethods;
 use S360Digital\LaravelLinter\Linters\FormRequestForControllerValidation;
 use S360Digital\LaravelLinter\Linters\NoCompact;
+use S360Digital\LaravelLinter\Linters\PreventUseOfPhpDirectiveInBladeViews;
 use S360Digital\LaravelLinter\Linters\ValidRouteStructure;
 use Tighten\Linters\AlphabeticalImports;
 use Tighten\Linters\ConcatenationSpacing;
@@ -48,6 +49,7 @@ class S360DigitalPreset implements PresetInterface
             NoSpaceAfterBladeDirectives::class,
             NoStringInterpolationWithoutBraces::class,
             NoUnusedImports::class,
+            PreventUseOfPhpDirectiveInBladeViews::class,
             QualifiedNamesOnlyForClassName::class,
             RemoveLeadingSlashNamespaces::class,
             ControllerHasCorrectOrderForRestMethods::class,
