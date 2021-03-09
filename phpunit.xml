@@ -11,6 +11,7 @@
     convertWarningsToExceptions="true"
     processIsolation="false"
     stopOnFailure="false"
+    printerClass="Sempro\PHPUnitPrettyPrinter\PrettyPrinterForPhpUnit9"
 >
     <testsuites>
         <testsuite name="Unit Tests">
