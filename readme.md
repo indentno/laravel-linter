@@ -2,6 +2,8 @@
 
 > Linting for your laravel project.
 
+[![Build Status](https://travis-ci.com/s360digital/laravel-linter.svg?branch=master)](https://travis-ci.com/s360digital/laravel-linter)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![psr-2](https://img.shields.io/badge/code_style-PSR_2-blue.svg)](http://www.php-fig.org/psr/psr-2/)
 
 A laravel linter based on the [tlint](https://github.com/tighten/tlint) package from the folks over at Tighten.
