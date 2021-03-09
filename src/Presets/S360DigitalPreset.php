@@ -7,6 +7,7 @@ use S360Digital\LaravelLinter\Linters\ArrayParametersOverViewWith;
 use S360Digital\LaravelLinter\Linters\ControllerHasCorrectOrderForRestMethods;
 use S360Digital\LaravelLinter\Linters\FormRequestForControllerValidation;
 use S360Digital\LaravelLinter\Linters\NoCompact;
+use S360Digital\LaravelLinter\Linters\ValidRouteStructure;
 use Tighten\Linters\AlphabeticalImports;
 use Tighten\Linters\ConcatenationSpacing;
 use Tighten\Linters\ImportFacades;
@@ -55,6 +56,7 @@ class S360DigitalPreset implements PresetInterface
             TrailingCommasOnArrays::class,
             UseAuthHelperOverFacade::class,
             UseConfigOverEnv::class,
+            ValidRouteStructure::class,
         ];
     }
 
