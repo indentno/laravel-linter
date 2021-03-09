@@ -4,6 +4,11 @@ php:
   - 7.3
   - 7.4
 
+branches:
+  only:
+    - master
+    - /((release|hotfix|feature)\/.*)/
+
 before_script: composer install
 
 script:
