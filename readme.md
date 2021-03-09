@@ -17,7 +17,7 @@ Install the package as a dev dependency:
 composer require s360digital/laravel-linter --dev
 ```
 
-Create a config, at the root of your repository, with the following contents:
+Create a config (`tlint.json`), at the root of your repository, with the following contents:
 
 ```json
 {
