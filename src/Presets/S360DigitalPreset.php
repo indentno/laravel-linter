@@ -2,6 +2,7 @@
 
 namespace S360Digital\LaravelLinter\Presets;
 
+use S360Digital\LaravelLinter\Linters\AnonymousMigrations;
 use S360Digital\LaravelLinter\Linters\ApplyMiddlewareInRoutes;
 use S360Digital\LaravelLinter\Linters\ArrayParametersOverViewWith;
 use S360Digital\LaravelLinter\Linters\ControllerHasCorrectOrderForRestMethods;
@@ -59,6 +60,7 @@ class S360DigitalPreset implements PresetInterface
             UseAuthHelperOverFacade::class,
             UseConfigOverEnv::class,
             ValidRouteStructure::class,
+            AnonymousMigrations::class,
         ];
     }
 
