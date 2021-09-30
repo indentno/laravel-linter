@@ -6,8 +6,8 @@ use PhpParser\Node;
 use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitor\FindingVisitor;
 use PhpParser\Parser;
-use Tighten\BaseLinter;
-use Tighten\Linters\Concerns\LintsMigrations;
+use Tighten\TLint\BaseLinter;
+use Tighten\TLint\Linters\Concerns\LintsMigrations;
 
 class AnonymousMigrations extends BaseLinter
 {

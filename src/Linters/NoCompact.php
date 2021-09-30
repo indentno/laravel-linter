@@ -8,7 +8,7 @@ use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitor\FindingVisitor;
 use PhpParser\Parser;
 use S360Digital\LaravelLinter\Linters\Concerns\LintsControllers;
-use Tighten\BaseLinter;
+use Tighten\TLint\BaseLinter;
 
 class NoCompact extends BaseLinter
 {
