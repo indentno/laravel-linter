@@ -2,7 +2,6 @@
 
 namespace S360Digital\LaravelLinter\Presets;
 
-use S360Digital\LaravelLinter\Linters\AnonymousMigrations;
 use S360Digital\LaravelLinter\Linters\ApplyMiddlewareInRoutes;
 use S360Digital\LaravelLinter\Linters\ArrayParametersOverViewWith;
 use S360Digital\LaravelLinter\Linters\ControllerHasCorrectOrderForRestMethods;
@@ -26,6 +25,7 @@ use Tighten\TLint\Linters\RemoveLeadingSlashNamespaces;
 use Tighten\TLint\Linters\SpaceAfterBladeDirectives;
 use Tighten\TLint\Linters\SpacesAroundBladeRenderContent;
 use Tighten\TLint\Linters\TrailingCommasOnArrays;
+use Tighten\TLint\Linters\UseAnonymousMigrations;
 use Tighten\TLint\Linters\UseAuthHelperOverFacade;
 use Tighten\TLint\Linters\UseConfigOverEnv;
 use Tighten\TLint\Presets\PresetInterface;
@@ -60,7 +60,7 @@ class S360DigitalPreset implements PresetInterface
             UseAuthHelperOverFacade::class,
             UseConfigOverEnv::class,
             ValidRouteStructure::class,
-            AnonymousMigrations::class,
+            UseAnonymousMigrations::class,
         ];
     }
 
