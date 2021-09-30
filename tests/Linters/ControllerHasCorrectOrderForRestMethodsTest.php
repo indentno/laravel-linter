@@ -4,7 +4,7 @@ namespace Tests\Linters;
 
 use PHPUnit\Framework\TestCase;
 use S360Digital\LaravelLinter\Linters\ControllerHasCorrectOrderForRestMethods;
-use Tighten\TLint;
+use Tighten\TLint\TLint;
 
 class ControllerHasCorrectOrderForRestMethodsTest extends TestCase
 {
