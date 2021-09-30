@@ -6,8 +6,8 @@ use PhpParser\Node;
 use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitor\FindingVisitor;
 use PhpParser\Parser;
-use Tighten\BaseLinter;
-use Tighten\Linters\Concerns\LintsRoutesFiles;
+use Tighten\TLint\BaseLinter;
+use Tighten\TLint\Linters\Concerns\LintsRoutesFiles;
 
 class ValidRouteStructure extends BaseLinter
 {

@@ -8,8 +8,8 @@ use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitor\FindingVisitor;
 use PhpParser\Parser;
 use S360Digital\LaravelLinter\Linters\Concerns\LintsControllers;
-use Tighten\BaseLinter;
-use Tighten\Linters\Concerns\LintsRoutesFiles;
+use Tighten\TLint\BaseLinter;
+use Tighten\TLint\Linters\Concerns\LintsRoutesFiles;
 
 class ArrayParametersOverViewWith extends BaseLinter
 {

@@ -3,9 +3,9 @@
 namespace S360Digital\LaravelLinter\Linters;
 
 use PhpParser\Parser;
-use Tighten\BaseLinter;
-use Tighten\CustomNode;
-use Tighten\Linters\Concerns\LintsBladeTemplates;
+use Tighten\TLint\BaseLinter;
+use Tighten\TLint\CustomNode;
+use Tighten\TLint\Linters\Concerns\LintsBladeTemplates;
 
 class PreventUseOfPhpDirectiveInBladeViews extends BaseLinter
 {

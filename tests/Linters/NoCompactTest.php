@@ -4,7 +4,7 @@ namespace Tests\Linters;
 
 use PHPUnit\Framework\TestCase;
 use S360Digital\LaravelLinter\Linters\NoCompact;
-use Tighten\TLint;
+use Tighten\TLint\TLint;
 
 class NoCompactTest extends TestCase
 {

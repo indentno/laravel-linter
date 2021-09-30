@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": ">=7.3",
-        "tightenco/tlint": "^5.0"
+        "tightenco/tlint": "^6.1"
     },
     "autoload": {
         "psr-4": {
