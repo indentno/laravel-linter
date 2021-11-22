@@ -13,7 +13,7 @@ class ValidRouteStructure extends BaseLinter
 {
     use LintsRoutesFiles;
 
-    public const description = 'Routes should be structured correctly. More information '
+    public const DESCRIPTION = 'Routes should be structured correctly. More information '
         . 'here: https://docs.sempro.no/laravel/routing.html#anbefalt-struktur-for-routes';
 
     private const ROUTE_METHOD_NAMES = [

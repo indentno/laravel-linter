@@ -13,7 +13,7 @@ class FormRequestForControllerValidation extends BaseLinter
 {
     use LintsControllers;
 
-    public const description = 'Extract a FormRequest instead of using `$this->validate(...)` or '
+    public const DESCRIPTION = 'Extract a FormRequest instead of using `$this->validate(...)` or '
         . '`request()->validate(...)` in controllers';
 
     public function lint(Parser $parser)
