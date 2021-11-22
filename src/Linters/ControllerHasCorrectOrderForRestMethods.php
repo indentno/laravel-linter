@@ -13,7 +13,7 @@ class ControllerHasCorrectOrderForRestMethods extends BaseLinter
 {
     use LintsControllers;
 
-    public const description = 'REST methods in controllers should match the ordering here:'
+    public const DESCRIPTION = 'REST methods in controllers should match the ordering here:'
         . ' https://laravel.com/docs/8.x/controllers#actions-handled-by-resource-controller';
 
     protected const RESTFUL_METHOD_NAMES = [

@@ -11,7 +11,7 @@ class PreventUseOfPhpDirectiveInBladeViews extends BaseLinter
 {
     use LintsBladeTemplates;
 
-    public const description = '@php blade directive is not allowed in blade views.';
+    public const DESCRIPTION = '@php blade directive is not allowed in blade views.';
 
     public function lint(Parser $parser)
     {
