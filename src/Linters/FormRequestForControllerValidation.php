@@ -2,12 +2,12 @@
 
 namespace S360Digital\LaravelLinter\Linters;
 
-use Tighten\TLint\Linters\Concerns\LintsControllers;
-use Tighten\TLint\BaseLinter;
-use PhpParser\Parser;
-use PhpParser\NodeVisitor\FindingVisitor;
-use PhpParser\NodeTraverser;
 use PhpParser\Node;
+use PhpParser\NodeTraverser;
+use PhpParser\NodeVisitor\FindingVisitor;
+use PhpParser\Parser;
+use Tighten\TLint\BaseLinter;
+use Tighten\TLint\Linters\Concerns\LintsControllers;
 
 class FormRequestForControllerValidation extends BaseLinter
 {
