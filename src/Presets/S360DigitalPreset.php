@@ -1,43 +1,36 @@
 <?php
 
-namespace S360Digital\LaravelLinter\Presets;
+namespace Indent\LaravelLinter\Presets;
 
-use S360Digital\LaravelLinter\Linters\ControllerHasCorrectOrderForRestMethods;
-use S360Digital\LaravelLinter\Linters\FormRequestForControllerValidation;
-use S360Digital\LaravelLinter\Linters\ValidRouteStructure;
-use Tighten\TLint\Linters\AlphabeticalImports;
+use Indent\LaravelLinter\Linters\ControllerHasCorrectOrderForRestMethods;
+use Indent\LaravelLinter\Linters\FormRequestForControllerValidation;
+use Indent\LaravelLinter\Linters\ImportFacades;
+use Indent\LaravelLinter\Linters\NoCompact;
+use Indent\LaravelLinter\Linters\NoDump;
+use Indent\LaravelLinter\Linters\NoStringInterpolationWithoutBraces;
+use Indent\LaravelLinter\Linters\UseConfigOverEnv;
+use Indent\LaravelLinter\Linters\ValidRouteStructure;
 use Tighten\TLint\Linters\ApplyMiddlewareInRoutes;
 use Tighten\TLint\Linters\ArrayParametersOverViewWith;
-use Tighten\TLint\Linters\ConcatenationSpacing;
-use Tighten\TLint\Linters\ImportFacades;
-use Tighten\TLint\Linters\NoCompact;
 use Tighten\TLint\Linters\NoDatesPropertyOnModels;
-use Tighten\TLint\Linters\NoDump;
 use Tighten\TLint\Linters\NoJsonDirective;
 use Tighten\TLint\Linters\NoLeadingSlashesOnRoutePaths;
-use Tighten\TLint\Linters\NoParensEmptyInstantiations;
 use Tighten\TLint\Linters\NoSpaceAfterBladeDirectives;
-use Tighten\TLint\Linters\NoStringInterpolationWithoutBraces;
-use Tighten\TLint\Linters\NoUnusedImports;
 use Tighten\TLint\Linters\QualifiedNamesOnlyForClassName;
 use Tighten\TLint\Linters\RemoveLeadingSlashNamespaces;
 use Tighten\TLint\Linters\SpaceAfterBladeDirectives;
 use Tighten\TLint\Linters\SpacesAroundBladeRenderContent;
-use Tighten\TLint\Linters\TrailingCommasOnArrays;
 use Tighten\TLint\Linters\UseAnonymousMigrations;
 use Tighten\TLint\Linters\UseAuthHelperOverFacade;
-use Tighten\TLint\Linters\UseConfigOverEnv;
 use Tighten\TLint\Presets\PresetInterface;
 
-class S360DigitalPreset implements PresetInterface
+class IndentPreset implements PresetInterface
 {
     public function getLinters(): array
     {
         return [
-            AlphabeticalImports::class,
             ApplyMiddlewareInRoutes::class,
             ArrayParametersOverViewWith::class,
-            ConcatenationSpacing::class,
             FormRequestForControllerValidation::class,
             ImportFacades::class,
             NoCompact::class,
@@ -45,16 +38,13 @@ class S360DigitalPreset implements PresetInterface
             NoDump::class,
             NoJsonDirective::class,
             NoLeadingSlashesOnRoutePaths::class,
-            NoParensEmptyInstantiations::class,
             NoSpaceAfterBladeDirectives::class,
             NoStringInterpolationWithoutBraces::class,
-            NoUnusedImports::class,
             QualifiedNamesOnlyForClassName::class,
             RemoveLeadingSlashNamespaces::class,
             ControllerHasCorrectOrderForRestMethods::class,
             SpaceAfterBladeDirectives::class,
             SpacesAroundBladeRenderContent::class,
-            TrailingCommasOnArrays::class,
             UseAuthHelperOverFacade::class,
             UseConfigOverEnv::class,
             ValidRouteStructure::class,
