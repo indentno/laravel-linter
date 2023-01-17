@@ -1,6 +1,6 @@
 <?php
 
-namespace S360Digital\LaravelLinter\Linters;
+namespace Indent\LaravelLinter\Linters;
 
 use PhpParser\Parser;
 use Tighten\TLint\BaseLinter;

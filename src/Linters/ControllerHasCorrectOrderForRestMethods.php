@@ -1,6 +1,6 @@
 <?php
 
-namespace S360Digital\LaravelLinter\Linters;
+namespace Indent\LaravelLinter\Linters;
 
 use PhpParser\Node;
 use PhpParser\NodeTraverser;

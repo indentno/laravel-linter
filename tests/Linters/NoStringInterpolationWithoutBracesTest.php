@@ -3,7 +3,7 @@
 namespace Tests\Linters;
 
 use PHPUnit\Framework\TestCase;
-use S360Digital\LaravelLinter\Linters\NoStringInterpolationWithoutBraces;
+use Indent\LaravelLinter\Linters\NoStringInterpolationWithoutBraces;
 use Tighten\TLint\TLint;
 
 class NoStringInterpolationWithoutBracesTest extends TestCase

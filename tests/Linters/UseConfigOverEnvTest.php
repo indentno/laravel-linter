@@ -3,7 +3,7 @@
 namespace Tests\Linters;
 
 use PHPUnit\Framework\TestCase;
-use S360Digital\LaravelLinter\Linters\UseConfigOverEnv;
+use Indent\LaravelLinter\Linters\UseConfigOverEnv;
 use Tighten\TLint\TLint;
 
 class UseConfigOverEnvTest extends TestCase

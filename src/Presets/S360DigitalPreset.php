@@ -1,15 +1,15 @@
 <?php
 
-namespace S360Digital\LaravelLinter\Presets;
+namespace Indent\LaravelLinter\Presets;
 
-use S360Digital\LaravelLinter\Linters\ControllerHasCorrectOrderForRestMethods;
-use S360Digital\LaravelLinter\Linters\FormRequestForControllerValidation;
-use S360Digital\LaravelLinter\Linters\ImportFacades;
-use S360Digital\LaravelLinter\Linters\NoCompact;
-use S360Digital\LaravelLinter\Linters\NoDump;
-use S360Digital\LaravelLinter\Linters\NoStringInterpolationWithoutBraces;
-use S360Digital\LaravelLinter\Linters\UseConfigOverEnv;
-use S360Digital\LaravelLinter\Linters\ValidRouteStructure;
+use Indent\LaravelLinter\Linters\ControllerHasCorrectOrderForRestMethods;
+use Indent\LaravelLinter\Linters\FormRequestForControllerValidation;
+use Indent\LaravelLinter\Linters\ImportFacades;
+use Indent\LaravelLinter\Linters\NoCompact;
+use Indent\LaravelLinter\Linters\NoDump;
+use Indent\LaravelLinter\Linters\NoStringInterpolationWithoutBraces;
+use Indent\LaravelLinter\Linters\UseConfigOverEnv;
+use Indent\LaravelLinter\Linters\ValidRouteStructure;
 use Tighten\TLint\Linters\ApplyMiddlewareInRoutes;
 use Tighten\TLint\Linters\ArrayParametersOverViewWith;
 use Tighten\TLint\Linters\NoDatesPropertyOnModels;
@@ -24,7 +24,7 @@ use Tighten\TLint\Linters\UseAnonymousMigrations;
 use Tighten\TLint\Linters\UseAuthHelperOverFacade;
 use Tighten\TLint\Presets\PresetInterface;
 
-class S360DigitalPreset implements PresetInterface
+class IndentPreset implements PresetInterface
 {
     public function getLinters(): array
     {

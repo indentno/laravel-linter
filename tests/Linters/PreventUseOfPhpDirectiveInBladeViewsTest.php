@@ -3,7 +3,7 @@
 namespace Tests\Linters;
 
 use PHPUnit\Framework\TestCase;
-use S360Digital\LaravelLinter\Linters\PreventUseOfPhpDirectiveInBladeViews;
+use Indent\LaravelLinter\Linters\PreventUseOfPhpDirectiveInBladeViews;
 use Tighten\TLint\TLint;
 
 class PreventUseOfPhpDirectiveInBladeViewsTest extends TestCase

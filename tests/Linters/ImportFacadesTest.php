@@ -3,7 +3,7 @@
 namespace Tests\Linters;
 
 use PHPUnit\Framework\TestCase;
-use S360Digital\LaravelLinter\Linters\ImportFacades;
+use Indent\LaravelLinter\Linters\ImportFacades;
 use Tighten\TLint\TLint;
 
 class ImportFacadesTest extends TestCase

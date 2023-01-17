@@ -3,7 +3,7 @@
 namespace Tests\Linters;
 
 use PHPUnit\Framework\TestCase;
-use S360Digital\LaravelLinter\Linters\NoDump;
+use Indent\LaravelLinter\Linters\NoDump;
 use Tighten\TLint\TLint;
 
 class NoDumpTest extends TestCase
