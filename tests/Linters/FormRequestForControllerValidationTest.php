@@ -3,7 +3,7 @@
 namespace Tests\Linters;
 
 use PHPUnit\Framework\TestCase;
-use S360Digital\LaravelLinter\Linters\FormRequestForControllerValidation;
+use Indent\LaravelLinter\Linters\FormRequestForControllerValidation;
 use Tighten\TLint\TLint;
 
 class FormRequestForControllerValidationTest extends TestCase

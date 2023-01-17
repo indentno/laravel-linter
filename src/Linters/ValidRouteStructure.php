@@ -1,6 +1,6 @@
 <?php
 
-namespace S360Digital\LaravelLinter\Linters;
+namespace Indent\LaravelLinter\Linters;
 
 use PhpParser\Node;
 use PhpParser\NodeTraverser;
@@ -14,7 +14,7 @@ class ValidRouteStructure extends BaseLinter
     use LintsRoutesFiles;
 
     public const DESCRIPTION = 'Routes should be structured correctly. More information '
-        . 'here: https://docs.sempro.no/laravel/routing.html#anbefalt-struktur-for-routes';
+        . 'here: https://github.com/indentno/laravel-linter#validroutestructure';
 
     private const ROUTE_METHOD_NAMES = [
         'get',

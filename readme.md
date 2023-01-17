@@ -2,7 +2,7 @@
 
 > Linting for your laravel project.
 
-[![Build Status](https://travis-ci.com/s360digital/laravel-linter.svg?branch=master)](https://travis-ci.com/s360digital/laravel-linter)
+[![Build Status](https://travis-ci.com/indentno/laravel-linter.svg?branch=master)](https://travis-ci.com/indentno/laravel-linter)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![psr-2](https://img.shields.io/badge/code_style-PSR_2-blue.svg)](http://www.php-fig.org/psr/psr-2/)
 
@@ -14,14 +14,14 @@ A laravel linter based on the [tlint](https://github.com/tighten/tlint) package 
 Install the package as a dev dependency:
 
 ```bash
-composer require s360digital/laravel-linter --dev
+composer require indentno/laravel-linter --dev
 ```
 
 Create a config (`tlint.json`), at the root of your repository, with the following contents:
 
 ```json
 {
-  "preset": "S360Digital\\LaravelLinter\\Presets\\S360DigitalPreset",
+  "preset": "Indent\\LaravelLinter\\Presets\\IndentPreset",
   "excluded": [
     "tests/",
     "database/"
@@ -64,11 +64,11 @@ The "preset" defines which preset that should be used for linting the project. A
 
 ### Disabled
 
-The "disabled" key can be used to disable a set of linters from being ran in your project.
+The "disabled" key can be used to disable a set of linters from being run in your project.
 
 ```json
 {
-  "preset": "S360Digital\\LaravelLinter\\Presets\\S360DigitalPreset",
+  "preset": "Indent\\LaravelLinter\\Presets\\IndentPreset",
   "disabled": [
       "NoCompact",
       "UseConfigOverEnv"
@@ -80,6 +80,23 @@ The "disabled" key can be used to disable a set of linters from being ran in you
 }
 ```
 
+## Rules
+
+An overview of rules that needs further explanation.
+
+### ValidRouteStructure
+
+Routes should be structured the way we prefer.
+
+**Examples**
+```php
+Route::get('articles', [ArticleController::class, 'index'])->name('article.index');
+
+Route::patch('page/{id}', [PageController::class, 'update'])
+    ->name('admin.page.update')
+    ->middleware(CanUpdatePage::class);
+```
+
 ## License
 
-MIT © [s360](http://s360digital.com/)
+MIT © [Indent](https://indent.no/)

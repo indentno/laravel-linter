@@ -3,7 +3,7 @@
 namespace Tests\Linters;
 
 use PHPUnit\Framework\TestCase;
-use S360Digital\LaravelLinter\Linters\ValidRouteStructure;
+use Indent\LaravelLinter\Linters\ValidRouteStructure;
 use Tighten\TLint\TLint;
 
 class ValidRouteStructureTest extends TestCase
