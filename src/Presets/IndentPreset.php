@@ -8,6 +8,7 @@ use Indent\LaravelLinter\Linters\ImportFacades;
 use Indent\LaravelLinter\Linters\NoCompact;
 use Indent\LaravelLinter\Linters\NoDump;
 use Indent\LaravelLinter\Linters\NoStringInterpolationWithoutBraces;
+use Indent\LaravelLinter\Linters\RouteUrlsUsesKebabCasing;
 use Indent\LaravelLinter\Linters\UseConfigOverEnv;
 use Indent\LaravelLinter\Linters\ValidRouteStructure;
 use Tighten\TLint\Linters\ApplyMiddlewareInRoutes;
@@ -42,6 +43,7 @@ class IndentPreset implements PresetInterface
             NoStringInterpolationWithoutBraces::class,
             QualifiedNamesOnlyForClassName::class,
             RemoveLeadingSlashNamespaces::class,
+            RouteUrlsUsesKebabCasing::class,
             ControllerHasCorrectOrderForRestMethods::class,
             SpaceAfterBladeDirectives::class,
             SpacesAroundBladeRenderContent::class,
