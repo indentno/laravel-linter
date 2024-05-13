@@ -17,7 +17,9 @@ class NoCompact extends BaseLinter
     protected function visitor(): Closure
     {
         return function (Node $node) {
-            return $node instanceof FuncCall && ! empty($node->name->parts) && $node->name->parts[0] === 'compact';
+            return $node instanceof FuncCall
+                && !empty($node->name->getParts())
+                && $node->name->getParts()[0] === 'compact';
         };
     }
 }
