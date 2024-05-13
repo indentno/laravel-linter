@@ -108,7 +108,7 @@ class RouteUrlsUsesKebabCasing extends BaseLinter
     private function routeClassIsTheStaticRootNode(Node\Expr\MethodCall $node): bool
     {
         $rootNode = $this->recursivelyGetRootStaticNode($node);
-        $rootName = $rootNode->class->parts[0] ?? '';
+        $rootName = $rootNode->class->getParts()[0] ?? '';
 
         return $rootName === 'Route';
     }
