@@ -21,7 +21,6 @@ use Tighten\TLint\Linters\RemoveLeadingSlashNamespaces;
 use Tighten\TLint\Linters\SpaceAfterBladeDirectives;
 use Tighten\TLint\Linters\SpacesAroundBladeRenderContent;
 use Tighten\TLint\Linters\UseAnonymousMigrations;
-use Tighten\TLint\Linters\UseAuthHelperOverFacade;
 use Tighten\TLint\Presets\PresetInterface;
 
 class IndentPreset implements PresetInterface
@@ -45,7 +44,6 @@ class IndentPreset implements PresetInterface
             ControllerHasCorrectOrderForRestMethods::class,
             SpaceAfterBladeDirectives::class,
             SpacesAroundBladeRenderContent::class,
-            UseAuthHelperOverFacade::class,
             UseConfigOverEnv::class,
             ValidRouteStructure::class,
             UseAnonymousMigrations::class,
