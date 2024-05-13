@@ -4,8 +4,8 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "php": ">=8.0",
-        "tightenco/tlint": "^8.0"
+        "php": ">=8.1",
+        "tightenco/tlint": "^9.3"
     },
     "autoload": {
         "psr-4": {
