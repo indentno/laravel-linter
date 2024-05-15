@@ -15,8 +15,14 @@ class NoDump extends BaseLinter
     protected function visitor(): Closure
     {
         return function (Node $node) {
-            return ($node instanceof FuncCall && ! empty($node->name->getParts()) && in_array($node->name->getParts()[0], ['dd', 'dump', 'var_dump', 'ray'], true))
-                || ($node instanceof Identifier && in_array($node->name, ['dump', 'dd'], true));
+            return (
+                $node instanceof FuncCall
+                && method_exists($node->name, 'getParts')
+                && ! empty($node->name->getParts())
+                && in_array($node->name->getParts()[0], ['dd', 'dump', 'var_dump', 'ray'], true))
+                || (
+                    $node instanceof Identifier && in_array($node->name, ['dump', 'dd'], true)
+                );
         };
     }
 }

@@ -1,8 +1,8 @@
 language: php
 
 php:
-  - 8.1
   - 8.2
+  - 8.3
 
 dist: focal
 
@@ -14,7 +14,7 @@ addons:
 branches:
   only:
     - master
-    - /((release|hotfix|feature)\/.*)/
+    - /((feature)\/.*)/
 
 before_script: composer install
 
